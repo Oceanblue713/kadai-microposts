@@ -7,7 +7,7 @@
        </div>
        <%= f.submit 'Post', class: 'btn btn-primary btn-block' %>
        <br>
-       <%= link_to favorites_user_path(@user) do %><span class="btn btn-success btn-block">Favorite</span><%= @count_favorites %></span><% end %></li>
+       <%= link_to favorites_user_path(current_user) do %><span class="btn btn-success btn-block">Favorite</span><%= @count_favorites %></span><% end %></li>
      <% end %>
    </aside>
    <div class="col-xs-8">
