@@ -6,6 +6,8 @@
          <%= f.text_area :content, class: 'form-control', rows: 5 %>
        </div>
        <%= f.submit 'Post', class: 'btn btn-primary btn-block' %>
+       <br>
+       <%= link_to favorites_user_path(@user) do %><span class="btn btn-success btn-block">Favorite</span><%= @count_favorites %></span><% end %></li>
      <% end %>
    </aside>
    <div class="col-xs-8">
@@ -16,6 +18,9 @@
   <div class="center jumbotron">
     <div class="text-center">
       <h1>Welcome to the Microposts</h1>
+      <br>
+      <br>
+      <br>
       <%= link_to 'Sign up now!', signup_path, class: 'btn btn-lg btn-primary' %>
     </div>
   </div>
